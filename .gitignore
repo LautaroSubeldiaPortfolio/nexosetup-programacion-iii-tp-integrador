@@ -1,5 +1,47 @@
-
+# dependencias
 node_modules/
+
+# variables de entorno y secretos (nunca se suben)
 .env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+id_rsa*
+secrets/
+credentials.json
+
+# bases de datos: dumps, backups y archivos locales (pueden tener datos reales)
+*.dump
+*.bak
+*.sqlite
+*.sqlite3
+*.db
+
+# archivos que se generan al probar (cookies de sesion, logs, descargas)
 *.log
+logs/
+cj*.txt
+cookies.txt
+*.xlsx
+ticket-*.pdf
+*.tmp
+*.swp
+
+# sistema operativo
 .DS_Store
+Thumbs.db
+desktop.ini
+
+# editores
+.vscode/
+.idea/
+*.code-workspace
+
+# builds y cache
+coverage/
+dist/
+build/
+.cache/
